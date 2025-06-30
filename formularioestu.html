@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Estudiantes</title>
+</head>
+<body>
+    <h2>Menú - Gestión de Estudiantes</h2>
+    
+    <h3>Ingreso de datos</h3>
+    <form action="insertar.php" method="POST">
+        <input type="text" name="cedula" placeholder="Cédula" required><br>
+        <input type="text" name="nombre" placeholder="Nombre completo" required><br>
+        <input type="email" name="correo" placeholder="Correo"><br>
+        <input type="text" name="carrera" placeholder="Carrera"><br>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <hr>
+
+    <h3>Consulta individual</h3>
+    <form action="consulta.php" method="GET">
+        <input type="number" name="id" placeholder="ID del estudiante">
+        <button type="submit">Consultar</button>
+    </form>
+
+    <hr>
+
+    <h3>Actualizar estudiante</h3>
+    <form action="actualizar.php" method="POST">
+        <input type="number" name="id" placeholder="ID a actualizar" required><br>
+        <input type="text" name="cedula" placeholder="Nueva Cédula"><br>
+        <input type="text" name="nombre" placeholder="Nuevo Nombre"><br>
+        <input type="email" name="correo" placeholder="Nuevo Correo"><br>
+        <input type="text" name="carrera" placeholder="Nueva Carrera"><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>
